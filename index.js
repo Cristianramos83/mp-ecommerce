@@ -9,10 +9,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'))
 
 app.post('/pay', function(req, res) {
-  console.log(req.body)
-  
-  // show congrats.html page example
-  res.sendFile(__dirname + "/public/congrats.html");
+    console.log(req.body)
+
+    // show congrats.html page example
+    res.sendFile(__dirname + "/public/congrats.html");
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
